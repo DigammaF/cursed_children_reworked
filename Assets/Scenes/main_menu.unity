@@ -176,7 +176,7 @@ GameObject:
   - component: {fileID: 310565350}
   - component: {fileID: 310565349}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 1928584253}
   - component: {fileID: 1928584252}
   m_Layer: 0
-  m_Name: EventSystem
+  m_Name: event_system
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

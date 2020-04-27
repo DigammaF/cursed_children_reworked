@@ -19,7 +19,6 @@ public class main_menu_play_button : MonoBehaviour
 
     public void Clicked() {
 
-    	Debug.Log("Go!");
     	SceneManager.LoadScene("game");
 
     }

@@ -1,2 +1,4 @@
-# cursed_children_reworked
-Un rework du projet mené à bien pendant la ludum dare 2020, en utilisant C# et Unity.
+# Faire une remarque
+
+Une mauvaise expérience ? Des idées ? Un bug à dénoncer ? Cliquez sur 'Issues' et créez votre remarque.
+## Assurez vous de labéliser correctement votre remarque pour que nous ne la rations pas et que nous puissions la consulter dans les plus brefs délais

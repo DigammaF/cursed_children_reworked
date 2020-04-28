@@ -32,22 +32,20 @@ public class entity_animation_handler : MonoBehaviour
 
     public void FaceRight() {
 
-    	Vector3 current_scale = transform.localScale;
     	transform.localScale = new Vector3(
-    		Math.Abs(current_scale.x),
-    		current_scale.y,
-    		current_scale.z
+    		Math.Abs(transform.localScale.x),
+    		transform.localScale.y,
+    		transform.localScale.z
     	);
 
     }
 
     public void FaceLeft() {
 
-    	Vector3 current_scale = transform.localScale;
     	transform.localScale = new Vector3(
-    		-Math.Abs(current_scale.x),
-    		current_scale.y,
-    		current_scale.z
+    		-Math.Abs(transform.localScale.x),
+    		transform.localScale.y,
+    		transform.localScale.z
     	);
 
     }

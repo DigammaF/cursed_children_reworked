@@ -9,6 +9,8 @@ public class input_reader : MonoBehaviour
 
 	public entity_controller_handler handler;
 
+	private Vector2 com; // tmp
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,9 +21,9 @@ public class input_reader : MonoBehaviour
     void Update()
     {
 
-    	Vector2 com = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+    	com.Set(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
-    	handler.SetCommand(com);
+    	handler.SetPlayerCommand(com);
 
     }
 }

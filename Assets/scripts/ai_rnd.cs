@@ -10,6 +10,8 @@ public class ai_rnd : MonoBehaviour
 	private bool first_target_set = false;
 	private Vector2 original_pos;
 
+	private Vector2 pos; // tmp
+
 	public float range;
 
     // Start is called before the first frame update
@@ -22,9 +24,9 @@ public class ai_rnd : MonoBehaviour
 
     void NewTarget() {
 
-    	Vector2 pos = handler.Position();
+    	pos = handler.Position();
 
-    	target = new Vector2(
+    	target.Set(
     		original_pos.x + Random.Range(-1.0f, 1.0f),
     		original_pos.y + Random.Range(-1.0f, 1.0f)
     	);
@@ -51,10 +53,7 @@ public class ai_rnd : MonoBehaviour
 
     	}
 
-    	handler.MoveToward(target);
-
-    	//Debug.Log(target.x + ";" + target.y);
-    	Debug.Log(Vector2.Distance(handler.Position(), target));
+    	handler.AIMoveToward(target);
         
     }
 }

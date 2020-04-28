@@ -10,7 +10,8 @@ public class entity_handler : MonoBehaviour
 {
 
 	private Rigidbody2D rigid_body;
-	private Vector2 command;
+	private Vector2 player_command;
+	private Vector2 ai_command;
 	private entity_animation_handler animation_handler;
 
 	public float move_speed = 100f;
@@ -24,6 +25,17 @@ public class entity_handler : MonoBehaviour
 	private float reload = 0f;
 	private float attack = 0f;
 
+	private bool under_player_command = false;
+	private bool player_can_command = true;
+
+	public bool UnderPlayerCommand() {
+		return under_player_command;
+	}
+
+	public bool PlayerCanCommand() {
+		return player_can_command;
+	}
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +47,15 @@ public class entity_handler : MonoBehaviour
 
     void UpdateVelocity() {
 
-    	rigid_body.velocity = command*move_speed*Time.deltaTime;
+    	if (under_player_command) {
+
+    		rigid_body.velocity = player_command*move_speed*Time.deltaTime;
+
+    	} else {
+
+    		rigid_body.velocity = ai_command*move_speed*Time.deltaTime;
+
+    	}
 
     }
 
@@ -103,21 +123,46 @@ public class entity_handler : MonoBehaviour
         
     }
 
-    public void SetCommand(Vector2 com) {
+    public void SetPlayerCommand(Vector2 com) {
 
-    	command = com.normalized;
+    	player_command = com.normalized;
 
     }
 
-    public void MoveToward(Vector2 point) {
+    public void StopPlayerCommand() {
 
-    	SetCommand(point - Position());
+    	player_command.Set(0, 0);
+
+    }
+
+    public void SetAICommand(Vector2 com) {
+
+    	ai_command = com.normalized;
+
+    }
+
+    public void AIMoveToward(Vector2 point) {
+
+    	SetAICommand(point - Position());
 
     }
 
     public Vector2 Position() {
 
     	return rigid_body.position;
+
+    }
+
+    public void PlayerLeaveControl() {
+
+    	under_player_command = false;
+    	StopPlayerCommand();
+
+    }
+
+    public void PlayerAssumeControl() {
+
+    	under_player_command = true;
 
     }
 

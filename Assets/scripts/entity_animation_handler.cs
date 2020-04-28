@@ -16,11 +16,26 @@ public class entity_animation_handler : MonoBehaviour
 
 	private Animator animator;
 
+	private Vector3 right_scale;
+	private Vector3 left_scale;
+
     // Start is called before the first frame update
     void Start()
     {
 
     	animator = GetComponent<Animator>();
+
+    	right_scale = new Vector3(
+    		Math.Abs(transform.localScale.x),
+    		transform.localScale.y,
+    		transform.localScale.z
+    	);
+
+    	left_scale = new Vector3(
+    		-Math.Abs(transform.localScale.x),
+    		transform.localScale.y,
+    		transform.localScale.z
+    	);
         
     }
 
@@ -32,21 +47,13 @@ public class entity_animation_handler : MonoBehaviour
 
     public void FaceRight() {
 
-    	transform.localScale = new Vector3(
-    		Math.Abs(transform.localScale.x),
-    		transform.localScale.y,
-    		transform.localScale.z
-    	);
+    	transform.localScale = right_scale;
 
     }
 
     public void FaceLeft() {
 
-    	transform.localScale = new Vector3(
-    		-Math.Abs(transform.localScale.x),
-    		transform.localScale.y,
-    		transform.localScale.z
-    	);
+    	transform.localScale = left_scale;
 
     }
 

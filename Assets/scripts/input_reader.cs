@@ -21,6 +21,12 @@ public class input_reader : MonoBehaviour
     void Update()
     {
 
+    	if (Input.GetButtonDown("SwitchControl")) {
+
+    		handler.SwitchControl();
+
+    	}
+
     	com.Set(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
     	handler.SetPlayerCommand(com);

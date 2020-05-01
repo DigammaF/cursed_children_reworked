@@ -18,6 +18,7 @@ public class entity_handler : MonoBehaviour
 
 	public bool alive = true;
 	public float health = 100f;
+	public float max_health = 100f;
 	public float reload_time = 3f;
 	public float attack_time = 3f;
 	public float attack_damage = 20f;
@@ -27,6 +28,8 @@ public class entity_handler : MonoBehaviour
 
 	private bool under_player_command = false;
 	private bool player_can_command = true;
+
+	private bar_handler health_bar_handler;
 
 	public bool UnderPlayerCommand() {
 		return under_player_command;
@@ -42,6 +45,7 @@ public class entity_handler : MonoBehaviour
 
     	rigid_body = GetComponent<Rigidbody2D>();
     	animation_handler = GetComponent<entity_animation_handler>();
+    	health_bar_handler = transform.Find("health_bar_canvas").GetComponent<bar_handler>();
         
     }
 

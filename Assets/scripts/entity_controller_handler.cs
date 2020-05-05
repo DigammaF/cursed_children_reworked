@@ -40,7 +40,7 @@ public class entity_controller_handler : MonoBehaviour
     void Update()
     {
 
-    	Debug.Log((int)(1f / Time.unscaledDeltaTime));
+    	//Debug.Log((int)(1f / Time.unscaledDeltaTime));
 
     	if (!initial_control_set) {
 

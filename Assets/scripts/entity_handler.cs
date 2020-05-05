@@ -29,12 +29,46 @@ public class entity_handler : MonoBehaviour
 	private bool under_player_command = false;
 	private bool player_can_command = true;
 
+	private Vector2 eye_direction = new Vector2(0, 0);
+	public float vision_distance;
+	public float vision_angle; // degree
+
 	public bool UnderPlayerCommand() {
 		return under_player_command;
 	}
 
 	public bool PlayerCanCommand() {
 		return player_can_command;
+	}
+
+	public void LookForward() {
+
+		if (rigid_body.velocity.magnitude != 0f) {
+
+			eye_direction = rigid_body.velocity;
+
+		}
+
+	}
+
+	public bool CanSee(Vector2 pos) {
+
+		if (Vector2.Angle(eye_direction, pos - rigid_body.position) < vision_angle) {
+
+			RaycastHit2D hit = Physics2D.Raycast(rigid_body.position, pos - rigid_body.position, vision_distance, 9);
+
+			return hit.collider == null;
+
+		}
+
+		return false;
+
+	}
+
+	public bool CanSeeEntity(entity_handler hdl) {
+
+		return CanSee(hdl.Position());
+
 	}
 
     // Start is called before the first frame update
@@ -121,6 +155,8 @@ public class entity_handler : MonoBehaviour
     	UpdateWalkIdle();
     	UpdateFacing();
     	UpdateTimes();
+
+    	LookForward();
         
     }
 

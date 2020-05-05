@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5125598975241890986}
   - component: {fileID: 1172887914}
   - component: {fileID: 1172887915}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: entity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,6 +146,8 @@ MonoBehaviour:
   reload_time: 3
   attack_time: 3
   attack_damage: 20
+  vision_distance: 0
+  vision_angle: 0
 --- !u!114 &5482123303399149811
 MonoBehaviour:
   m_ObjectHideFlags: 0

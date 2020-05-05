@@ -2742,7 +2742,7 @@ GameObject:
   - component: {fileID: 2073816071}
   - component: {fileID: 2073816070}
   - component: {fileID: 2073816072}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3092,7 +3092,8 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 99359953, guid: 9c8b2acf7ad696746b1928bd75048798, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9c8b2acf7ad696746b1928bd75048798, type: 3}
 --- !u!1001 &3767313376331147870
 PrefabInstance:

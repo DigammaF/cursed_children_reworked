@@ -34,6 +34,8 @@ public class entity_handler : MonoBehaviour
 	public float vision_angle; // degree
 	public LayerMask vision_block_layer; // this may not work with complex mask manipulation, maybe bitwise ops will be needed
 
+	private flashlight_handler flashlight;
+
 	public bool UnderPlayerCommand() {
 		return under_player_command;
 	}
@@ -78,6 +80,13 @@ public class entity_handler : MonoBehaviour
 
     	rigid_body = GetComponent<Rigidbody2D>();
     	animation_handler = GetComponent<entity_animation_handler>();
+    	flashlight = transform.Find("flashlight").GetComponent<flashlight_handler>();
+
+    }
+
+    public void MakeFlashlightFacePoint(Vector3 pos) {
+
+    	flashlight.FacePoint(pos);
 
     }
 
@@ -196,11 +205,15 @@ public class entity_handler : MonoBehaviour
     	under_player_command = false;
     	StopPlayerCommand();
 
+    	flashlight.AutoTurnOff();
+
     }
 
     public void PlayerAssumeControl() {
 
     	under_player_command = true;
+
+    	flashlight.AutoTurnOn();
 
     }
 

@@ -50,7 +50,9 @@ public class entity_controller_handler : MonoBehaviour
     	}
 
     	game_camera_handler.FocusOn(controlled);
-        
+
+    	controlled_handler.MakeFlashlightFacePoint(game_camera.ScreenToWorldPoint(Input.mousePosition));
+
     }
 
     public void SetPlayerCommand(Vector2 com) {

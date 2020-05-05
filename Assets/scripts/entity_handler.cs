@@ -32,6 +32,7 @@ public class entity_handler : MonoBehaviour
 	private Vector2 eye_direction = new Vector2(0, 0);
 	public float vision_distance;
 	public float vision_angle; // degree
+	public LayerMask vision_block_layer;
 
 	public bool UnderPlayerCommand() {
 		return under_player_command;
@@ -55,7 +56,7 @@ public class entity_handler : MonoBehaviour
 
 		if (Vector2.Angle(eye_direction, pos - rigid_body.position) < vision_angle) {
 
-			RaycastHit2D hit = Physics2D.Raycast(rigid_body.position, pos - rigid_body.position, vision_distance, 9);
+			RaycastHit2D hit = Physics2D.Raycast(rigid_body.position, pos - rigid_body.position, vision_distance, vision_block_layer);
 
 			return hit.collider == null;
 

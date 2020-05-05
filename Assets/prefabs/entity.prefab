@@ -148,6 +148,9 @@ MonoBehaviour:
   attack_damage: 20
   vision_distance: 0
   vision_angle: 0
+  vision_block_layer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!114 &5482123303399149811
 MonoBehaviour:
   m_ObjectHideFlags: 0

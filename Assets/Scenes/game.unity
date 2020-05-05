@@ -2818,6 +2818,24 @@ Tilemap:
   m_GameObject: {fileID: 2073816068}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: 2, y: -3, z: 0}
+    second:
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
+  - first: {x: 2, y: -2, z: 0}
+    second:
+      m_TileIndex: 5
+      m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_ObjectToInstantiate: {fileID: 0}
+      m_TileFlags: 1
+      m_ColliderType: 1
   - first: {x: 6, y: 0, z: 0}
     second:
       m_TileIndex: 3
@@ -2929,7 +2947,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9edc1b406e8ff2d438b07790602e3437, type: 2}
   - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: 258e3906c32552b4b9f44744c1c0ca83, type: 2}
-  - m_RefCount: 3
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: f120c99fb8515dd46939bd930fee5b82, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
@@ -2942,10 +2960,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 60a52e64b447fde46b22f59d6cb60869, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 21300000, guid: f6131820c839c744e89f9a42edab7122, type: 3}
-  - m_RefCount: 3
+  - m_RefCount: 5
     m_Data: {fileID: 21300000, guid: 49089c350575f7e4788b2a5f8d84b819, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 11
+  - m_RefCount: 13
     m_Data:
       e00: 1
       e01: 0
@@ -2964,12 +2982,12 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 11
+  - m_RefCount: 13
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: 0, y: 0, z: 0}
-  m_Size: {x: 12, y: 5, z: 1}
+  m_Origin: {x: 0, y: -3, z: 0}
+  m_Size: {x: 12, y: 8, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -3102,6 +3120,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3767313376331147842, guid: 6f3f89015839ab441bca331b2cbb7d84,
+        type: 3}
+      propertyPath: vision_distance
+      value: 1e+14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767313376331147842, guid: 6f3f89015839ab441bca331b2cbb7d84,
+        type: 3}
+      propertyPath: vision_angle
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3767313376331147842, guid: 6f3f89015839ab441bca331b2cbb7d84,
+        type: 3}
+      propertyPath: vision_block_layer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     - target: {fileID: 6979262946448775219, guid: 6f3f89015839ab441bca331b2cbb7d84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3174,9 +3207,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f3f89015839ab441bca331b2cbb7d84, type: 3}
+--- !u!114 &3767313376331147871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3767313376331147842, guid: 6f3f89015839ab441bca331b2cbb7d84,
+    type: 3}
+  m_PrefabInstance: {fileID: 3767313376331147870}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5482123303399149807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecdc689b90794aa43853f2bfe5f6bd2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5482123303399149807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7563227345773113104, guid: 6f3f89015839ab441bca331b2cbb7d84,
     type: 3}
   m_PrefabInstance: {fileID: 3767313376331147870}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5482123303399149808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5482123303399149807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e917fe2692eefe4c85ce16006ff948c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 99359952}
+  obs_handler: {fileID: 3767313376331147871}

@@ -19,6 +19,8 @@ public class entity_animation_handler : MonoBehaviour
 	private Vector3 right_scale;
 	private Vector3 left_scale;
 
+    private SpriteRenderer sprite_renderer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,8 @@ public class entity_animation_handler : MonoBehaviour
     		transform.localScale.y,
     		transform.localScale.z
     	);
+
+        sprite_renderer = GetComponent<SpriteRenderer>();
         
     }
 
@@ -47,13 +51,13 @@ public class entity_animation_handler : MonoBehaviour
 
     public void FaceRight() {
 
-    	transform.localScale = right_scale;
+    	sprite_renderer.flipX = false;
 
     }
 
     public void FaceLeft() {
 
-    	transform.localScale = left_scale;
+    	sprite_renderer.flipX = true;
 
     }
 

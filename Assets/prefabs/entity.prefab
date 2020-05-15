@@ -225,12 +225,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecdc689b90794aa43853f2bfe5f6bd2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_speed: 100
+  move_speed: 400
   alive: 1
   health: 100
   max_health: 100
   reload_time: 3
-  attack_time: 3
+  attack_cooldown: 3
   attack_damage: 20
   vision_distance: 0
   vision_angle: 0
@@ -309,6 +309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7846496777837477111}
+  - component: {fileID: 8097327535734243621}
   m_Layer: 8
   m_Name: weapon_placeholder
   m_TagString: Untagged
@@ -330,3 +331,15 @@ Transform:
   m_Father: {fileID: 1767406921424626307}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8097327535734243621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4319316984355007036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65ed35cda358eb44a783cdbc82625a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

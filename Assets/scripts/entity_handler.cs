@@ -20,7 +20,7 @@ public class entity_handler : MonoBehaviour
 	public float health = 100f;
 	public float max_health = 100f;
 	public float reload_time = 3f;
-	public float attack_time = 3f;
+	public float attack_cooldown = 3f;
 	public float attack_damage = 20f;
 
 	private float reload = 0f;
@@ -35,6 +35,7 @@ public class entity_handler : MonoBehaviour
 	public LayerMask vision_block_layer; // this may not work with complex mask manipulation, maybe bitwise ops will be needed
 
 	private flashlight_handler flashlight;
+	private weapon_placeholder_handler weapon;
 
 	public bool UnderPlayerCommand() {
 		return under_player_command;
@@ -74,6 +75,16 @@ public class entity_handler : MonoBehaviour
 
 	}
 
+	public void AttackTowardPoint(Vector2 pos) {}
+
+	public bool CanAttackPoint(Vector2 pos) {return false;}
+
+	public bool CanAttackEntity(entity_handler hdl) {
+
+		return CanAttackPoint(hdl.Position());
+
+	}
+
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +92,9 @@ public class entity_handler : MonoBehaviour
     	rigid_body = GetComponent<Rigidbody2D>();
     	animation_handler = GetComponent<entity_animation_handler>();
     	flashlight = transform.Find("flashlight").GetComponent<flashlight_handler>();
+    	weapon = transform.Find("weapon_placeholder").GetComponent<weapon_placeholder_handler>();
+
+    	weapon.DoIgnore(gameObject);
 
     }
 

@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 720276189}
   - component: {fileID: 720276188}
   - component: {fileID: 720276187}
+  - component: {fileID: 720276190}
   m_Layer: 0
   m_Name: weapon_generic
   m_TagString: Untagged
@@ -150,6 +151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f872c78e271e44d80af7d348f20bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damage: 0
+  cooldown: 0
 --- !u!212 &720276188
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -213,6 +216,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &720276190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720276186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efcec9eb7a35e9243a81bae2f2be84e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1165425760
 PrefabInstance:
   m_ObjectHideFlags: 0

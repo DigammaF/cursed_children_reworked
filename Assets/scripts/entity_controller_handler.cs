@@ -21,6 +21,8 @@ public class entity_controller_handler : MonoBehaviour
 
 	private bool initial_control_set = false;
 
+	private Vector2 pos_tmp;
+
 	// public GameObject brother;
 	// public GameObject sister;
 
@@ -33,6 +35,8 @@ public class entity_controller_handler : MonoBehaviour
 
     	brother_handler = brother.GetComponent<entity_handler>();
     	sister_handler = sister.GetComponent<entity_handler>();
+
+    	Application.targetFrameRate = 60;
         
     }
 
@@ -46,6 +50,18 @@ public class entity_controller_handler : MonoBehaviour
 
     		initial_control_set = true;
     		AssumeControl(controlled, controlled_handler);
+
+    	}
+
+    	if (!controlled_handler.PlayerCanCommand()) {
+
+    		SwitchControl();
+
+    		if (!controlled_handler.PlayerCanCommand()) {
+
+    			// defeat!
+
+    		}
 
     	}
 
@@ -76,21 +92,69 @@ public class entity_controller_handler : MonoBehaviour
 
     }
 
-    public void SwitchControl() {
+    public void ControlSister() {
 
     	if (brother_handler.UnderPlayerCommand()) {
 
     		brother_handler.PlayerLeaveControl();
-
     		AssumeControl(sister, sister_handler);
+
+    	}
+
+    }
+
+    public void ControlBrother() {
+
+    	if (sister_handler.UnderPlayerCommand()) {
+
+    		sister_handler.PlayerLeaveControl();
+	    	AssumeControl(brother, brother_handler);
+
+    	}
+
+    }
+
+    public void SwitchControl() {
+
+    	if (brother_handler.UnderPlayerCommand()) {
+
+    		if (sister_handler.PlayerCanCommand()) {
+
+    			brother_handler.PlayerLeaveControl();
+    			AssumeControl(sister, sister_handler);
+
+    		}
 
     	} else {
 
-    		sister_handler.PlayerLeaveControl();
+    		if (brother_handler.PlayerCanCommand()) {
 
-    		AssumeControl(brother, brother_handler);
+	    		sister_handler.PlayerLeaveControl();
+	    		AssumeControl(brother, brother_handler);
+
+	    	}
 
     	}
+
+    }
+
+    public void AttackControl(Vector3 pos) {
+
+    	Vector3 game_pos = game_camera.ScreenToWorldPoint(pos);
+    	pos_tmp.Set(game_pos.x, game_pos.y);
+    	controlled_handler.AutoAttackTowardPoint(pos_tmp);
+
+    }
+
+    public void TakeNearWeapon() {
+
+    	controlled_handler.TakeNearWeapon();
+
+    }
+
+    public void DropWeapon() {
+
+    	controlled_handler.DropWeapon();
 
     }
 

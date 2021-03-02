@@ -27,6 +27,24 @@ public class input_reader : MonoBehaviour
 
     	}
 
+        if (Input.GetMouseButtonDown(0)) {
+
+            handler.AttackControl(Input.mousePosition);
+
+        }
+
+        if (Input.GetButtonDown("TakeWeapon")) {
+
+            handler.TakeNearWeapon();
+
+        }
+
+        if (Input.GetButtonDown("DropWeapon")) {
+
+            handler.DropWeapon();
+
+        }
+
     	com.Set(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
 
     	handler.SetPlayerCommand(com);

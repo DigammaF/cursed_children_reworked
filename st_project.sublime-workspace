@@ -1,0 +1,1374 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Compute",
+				"ComputedCooldown"
+			],
+			[
+				"attac",
+				"attack_cooldown_bar_handler"
+			],
+			[
+				"att",
+				"attack_cooldown_bar_canvas"
+			],
+			[
+				"atta",
+				"attack_cooldown_bar_handler"
+			],
+			[
+				"magic",
+				"magic_resist"
+			],
+			[
+				"More",
+				"MoreSparkles"
+			],
+			[
+				"cha",
+				"champ_level_dmg"
+			],
+			[
+				"auto",
+				"auto_attack"
+			],
+			[
+				"champ",
+				"champion"
+			],
+			[
+				"padd",
+				"paddle_star"
+			],
+			[
+				"zoe",
+				"zoeQAAQAAcombo"
+			],
+			[
+				"arm",
+				"armor"
+			],
+			[
+				"spe",
+				"spells"
+			],
+			[
+				"cast",
+				"cast_mana_adjust"
+			],
+			[
+				"paddl",
+				"paddle_star_level"
+			],
+			[
+				"Padd",
+				"PaddleStar"
+			],
+			[
+				"cost",
+				"cost_level"
+			],
+			[
+				"cool",
+				"cooldown_level"
+			],
+			[
+				"anti",
+				"anti_magic_resist"
+			],
+			[
+				"maxim",
+				"maximum_ap_ratio"
+			],
+			[
+				"mini",
+				"minimum_ap_ratio"
+			],
+			[
+				"leve",
+				"level"
+			],
+			[
+				"maxi",
+				"maximum_champ_level_dmg"
+			],
+			[
+				"minim",
+				"minimum_champ_level_dmg"
+			],
+			[
+				"spel",
+				"spells"
+			],
+			[
+				"heal",
+				"health"
+			],
+			[
+				"armor_reduc",
+				"armor_reduction_flat"
+			],
+			[
+				"armor",
+				"armor_reduction_percent"
+			],
+			[
+				"armo",
+				"armor_penetration_percent"
+			],
+			[
+				"redu",
+				"reduction_flat"
+			],
+			[
+				"reduc",
+				"reduction_percent"
+			],
+			[
+				"pene",
+				"penetration_flat"
+			],
+			[
+				"pen",
+				"penetration_percent"
+			],
+			[
+				"magi",
+				"magic_resist_reduction_flat"
+			],
+			[
+				"amr",
+				"armor_penetration_percent"
+			],
+			[
+				"upda",
+				"update_trackers"
+			],
+			[
+				"attack_speed",
+				"attack_speed_cap_max"
+			],
+			[
+				"attack_sp",
+				"attack_speed_cap_min"
+			],
+			[
+				"max_",
+				"max_health"
+			],
+			[
+				"mana",
+				"mana_cost"
+			],
+			[
+				"full",
+				"full_auto_attack_cooldown"
+			],
+			[
+				"attack",
+				"attack_damage"
+			],
+			[
+				"base",
+				"base_attack_speed"
+			],
+			[
+				"eve",
+				"event"
+			],
+			[
+				"even",
+				"event"
+			],
+			[
+				"anch",
+				"anchor"
+			],
+			[
+				"weapo",
+				"weapon_go"
+			],
+			[
+				"Vect",
+				"Vector2"
+			],
+			[
+				"spri",
+				"sprite_hdl"
+			],
+			[
+				"hit",
+				"hitbox"
+			],
+			[
+				"Coll",
+				"Collider2D"
+			],
+			[
+				"collid",
+				"colliders_tmp"
+			],
+			[
+				"weap",
+				"weapon"
+			],
+			[
+				"ta",
+				"taille_max"
+			],
+			[
+				"control",
+				"controlled_handler"
+			],
+			[
+				"sister",
+				"sister_handler"
+			],
+			[
+				"player",
+				"player_can_command"
+			],
+			[
+				"que",
+				"queue"
+			],
+			[
+				"weapon",
+				"weapon_gameobject"
+			],
+			[
+				"pos",
+				"pos_tmp"
+			],
+			[
+				"Comp",
+				"ComputedRange"
+			],
+			[
+				"inter",
+				"interaction_distance"
+			],
+			[
+				"Can",
+				"CanAttack"
+			],
+			[
+				"Start",
+				"StartAttacking"
+			],
+			[
+				"Sho",
+				"ShowIndependant"
+			],
+			[
+				"own",
+				"owner_hdl"
+			],
+			[
+				"OnWeapo",
+				"OnWeaponHitEntity"
+			],
+			[
+				"wea",
+				"weapon_gameobject"
+			],
+			[
+				"feu",
+				"feuilles_solution"
+			],
+			[
+				"enf",
+				"enfants"
+			],
+			[
+				"prof",
+				"profondeur"
+			],
+			[
+				"est",
+				"est_solution"
+			],
+			[
+				"en",
+				"enfant"
+			],
+			[
+				"dis",
+				"dist"
+			],
+			[
+				"max",
+				"max_prof"
+			],
+			[
+				"poss",
+				"possible_deletion_directives"
+			],
+			[
+				"sub",
+				"subsitution"
+			],
+			[
+				"delet",
+				"deletion"
+			],
+			[
+				"ins",
+				"insertion"
+			],
+			[
+				"possi",
+				"possible_insertion_directives"
+			],
+			[
+				"fla",
+				"flashlight"
+			],
+			[
+				"Turn",
+				"TurnOff"
+			],
+			[
+				"vis",
+				"vision_block_layer"
+			],
+			[
+				"visi",
+				"vision_distance"
+			],
+			[
+				"ori",
+				"orientation_v"
+			],
+			[
+				"min_",
+				"min_y"
+			],
+			[
+				"min",
+				"min_x"
+			],
+			[
+				"fade",
+				"fade_out"
+			],
+			[
+				"ima",
+				"image1"
+			],
+			[
+				"contr",
+				"controlled_handler"
+			],
+			[
+				"sis",
+				"sister_handler"
+			],
+			[
+				"br",
+				"brother"
+			],
+			[
+				"bro",
+				"brother_handler"
+			],
+			[
+				"obj",
+				"obj_handler"
+			],
+			[
+				"Set",
+				"SetPlayerCommand"
+			],
+			[
+				"Mai",
+				"StopMainSignal"
+			],
+			[
+				"new",
+				"new_content"
+			],
+			[
+				"left",
+				"left_to_sync"
+			],
+			[
+				"order",
+				"ordered_to_store"
+			],
+			[
+				"jobs",
+				"jobs_left"
+			],
+			[
+				"job",
+				"job_already_on_list"
+			],
+			[
+				"stopp",
+				"stopped_download_service"
+			],
+			[
+				"stop",
+				"stopping_download_service"
+			],
+			[
+				"sta",
+				"started_download_service"
+			],
+			[
+				"has",
+				"hash_job"
+			],
+			[
+				"ne",
+				"new_x"
+			],
+			[
+				"Ran",
+				"Range"
+			],
+			[
+				"fir",
+				"first_target_set"
+			],
+			[
+				"Upd",
+				"UpdateTimes"
+			],
+			[
+				"ent",
+				"entity_animation_handler"
+			],
+			[
+				"enti",
+				"entity_type"
+			],
+			[
+				"game",
+				"game_camera_handler"
+			],
+			[
+				"STa",
+				"StartFadeOut"
+			],
+			[
+				"Fad",
+				"FadeCanvas"
+			],
+			[
+				"lett",
+				"lettres_trouvees"
+			],
+			[
+				"pop",
+				"popstringa"
+			],
+			[
+				"le",
+				"lengthstring"
+			],
+			[
+				"get",
+				"getstring"
+			],
+			[
+				"Do",
+				"DownloadService"
+			],
+			[
+				"upd",
+				"update"
+			],
+			[
+				"run",
+				"running"
+			],
+			[
+				"flow",
+				"flower_type_addr"
+			],
+			[
+				"VIL",
+				"ville_courante"
+			],
+			[
+				"vil",
+				"ville_courante"
+			],
+			[
+				"dep",
+				"depart"
+			],
+			[
+				"tra",
+				"traj"
+			],
+			[
+				"pxf",
+				"pxfindh"
+			],
+			[
+				"WOR",
+				"WORKING_FILE"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Assets/scripts/entity_controller_handler.cs",
+			"settings":
+			{
+				"buffer_size": 3120,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/scripts/entity_handler.cs",
+			"settings":
+			{
+				"buffer_size": 6861,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/scripts/input_reader.cs",
+			"settings":
+			{
+				"buffer_size": 913,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/scripts/weapon_sprite_handler.cs",
+			"settings":
+			{
+				"buffer_size": 1684,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/scripts/weapon_handler.cs",
+			"settings":
+			{
+				"buffer_size": 1689,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/scripts/weapon_placeholder_handler.cs",
+			"settings":
+			{
+				"buffer_size": 2645,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/scripts/flashlight_handler.cs",
+			"settings":
+			{
+				"buffer_size": 1018,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/scripts/bar_handler.cs",
+			"settings":
+			{
+				"buffer_size": 1425,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/SublimePapyrus - Skyrim/Papyrus - Skyrim.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Lua/Lua.sublime-build",
+					""
+				],
+				[
+					"Packages/User/go.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Lua/Lua.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/SublimePapyrus - Skyrim/Papyrus - Skyrim.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimePapyrus - Skyrim/Papyrus - Skyrim.sublime-build",
+					"Batch"
+				],
+				[
+					"Packages/User/go.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/SublimePapyrus - Skyrim/Papyrus - Skyrim.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/go.sublime-build",
+					""
+				],
+				[
+					"Packages/User/hina.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/hina.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 137.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Arithmetic"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 251.0,
+		"history":
+		[
+			"import urllib2,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); os.makedirs( ipp ) if not os.path.exists(ipp) else None; urllib2.install_opener( urllib2.build_opener( urllib2.ProxyHandler()) ); by = urllib2.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); open( os.path.join( ipp, pf), 'wb' ).write(by) if dh == h else None; print('Error validating download (got %s instead of %s), please try manual install' % (dh, h) if dh != h else 'Please restart Sublime Text to finish installation')"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/maxim/Documents/home/Programmation/produits/Ti-Basic/days/days/manuel.html",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/fade_handler.cs",
+		"/C/Users/maxim/Desktop/proj.txt",
+		"/C/Program Files (x86)/Steam/steamapps/common/Kerbal Space Program/Ships/Script/orion_lib.ks",
+		"/C/Program Files (x86)/Steam/steamapps/common/Kerbal Space Program/Ships/Script/orion_debug_b.ks",
+		"/C/Program Files (x86)/Steam/steamapps/common/Kerbal Space Program/Ships/Script/sovereign.txt",
+		"/C/Program Files (x86)/Steam/steamapps/common/Kerbal Space Program/Ships/Script/orion_debug_a.ks",
+		"/C/Program Files (x86)/Steam/steamapps/common/Kerbal Space Program/Ships/Script/orion_debug.setup.ks",
+		"/C/Program Files (x86)/Steam/steamapps/common/Kerbal Space Program/Ships/Script/orion.txt",
+		"/C/Users/maxim/Desktop/theoryscraft/main.py",
+		"/C/Users/maxim/Documents/home/Programmation/produits/assembly/nasm/hello_world.asm",
+		"/C/Users/maxim/Desktop/r17/pics/body/renamer.py",
+		"/C/Users/maxim/Desktop/m.txt",
+		"/C/OCaml64/home/td12.ml",
+		"/C/Users/maxim/Desktop/TP30.py",
+		"/C/Users/maxim/Desktop/question_6.py",
+		"/C/OCaml64/home/td11.ml",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/entity_animation_handler.cs",
+		"/F/Documents/content/select/start.py",
+		"/C/Users/maxim/Desktop/Archive3/For More and Videos/Softcore and Hardcore Links.txt",
+		"/C/Users/maxim/Desktop/Archive3/For More and Videos/Hot Archive 8-21 yo Girls Videos And Photos.txt",
+		"/C/Users/maxim/Desktop/Archive3/For More and Videos/So cute Little Girls Videos links.txt",
+		"/C/Users/maxim/Desktop/Archive3/For More and Videos/Happywanker Videos Part 2 Small Girls.txt",
+		"/C/Users/maxim/Desktop/Archive3/For More and Videos/Happywanker Videos archive 8-10-11-12-13-14-15 yo Girls.txt",
+		"/C/Users/maxim/Desktop/Archive3/For More and Videos/14 - 18 yo girls links.txt",
+		"/C/Users/maxim/Desktop/annrx.txt",
+		"/F/Documents/content/annex.txt",
+		"/C/Users/maxim/Desktop/ryt/vids/dl.py",
+		"/C/Users/maxim/Desktop/lvl_up.txt",
+		"/C/Users/maxim/Desktop/tipe/tipe.txt",
+		"/C/Users/maxim/Desktop/tipe/tipe.py",
+		"/C/Users/maxim/Desktop/tipe.txt",
+		"/C/OCaml64/home/pile.ml",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/entity_controller_handler.cs",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/entity_handler.cs",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/input_reader.cs",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/bar_handler.cs",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/sister_handler.cs",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/flashlight_handler.cs",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/camera_handler.cs",
+		"/C/Users/maxim/Desktop/tp/TP29.py",
+		"/C/Users/maxim/Desktop/tp/ex.py",
+		"/C/Program Files (x86)/Steam/steamapps/common/Skyrim/Papyrus Compiler/source/helloworldscript.psc",
+		"/C/Users/maxim/AppData/Roaming/Sublime Text 3/Packages/User/SublimePapyrus.sublime-settings",
+		"/C/Program Files (x86)/Steam/steamapps/common/Skyrim/Papyrus Compiler/source/helloworldscript.txt",
+		"/C/Users/maxim/AppData/Roaming/Sublime Text 3/Packages/SublimePapyrus/SublimePapyrus.sublime-settings",
+		"/C/Users/maxim/Desktop/lev.py",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Library/PackageCache/com.unity.render-pipelines.lightweight@6.9.2/Runtime/2D/Light2D.cs",
+		"/C/Users/maxim/Desktop/ludum_dare/main.spec",
+		"/C/Users/maxim/Desktop/ludum_dare/.gitignore",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/vision_debug.cs",
+		"/C/Users/maxim/Desktop/days/data/include.py",
+		"/C/Users/maxim/Desktop/days/data/data.txt",
+		"/C/Users/maxim/Desktop/dm/dm.py",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/ai_rnd.cs",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/FadeEffect.cs",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/logo_fade.cs",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/.gitignore",
+		"/C/Users/maxim/Desktop/gay.txt",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/health_bar_handler.cs",
+		"/C/Users/maxim/Desktop/debug - Copie/game.py",
+		"/C/Users/maxim/Desktop/debug - Copie/main.py",
+		"/C/Users/maxim/Desktop/debug - Copie/Player.py",
+		"/C/Users/maxim/Desktop/debug/game.py",
+		"/C/Users/maxim/Desktop/debug/main.py",
+		"/C/Users/maxim/Desktop/debug/Player.py",
+		"/C/Users/maxim/Desktop/tp/TP27.py",
+		"/C/Users/maxim/Desktop/deb.py",
+		"/C/Program Files (x86)/Steam/steamapps/common/Prison Architect/main/data/dialogs/clock.txt",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/auto_y_sorting.cs",
+		"/C/Users/maxim/Desktop/reddit_observatory/main.py",
+		"/C/Users/maxim/Desktop/p.py",
+		"/C/Users/maxim/Desktop/deb/client.py",
+		"/C/Users/maxim/Desktop/deb/serv.py",
+		"/C/Users/maxim/Desktop/reddit_observatory/start.py",
+		"/C/Users/maxim/Desktop/reddit_observatory/config.py",
+		"/C/Users/maxim/Desktop/cursed_children_reworked/Assets/scripts/main_menu_play_button.cs",
+		"/C/Users/maxim/Desktop/sunny_world/generate.py",
+		"/C/Users/maxim/Desktop/sunny_world/game_engine.py",
+		"/C/Users/maxim/Desktop/sunny_world/sunny_world.txt",
+		"/C/Users/maxim/Desktop/sunny_world/memory_manager.py",
+		"/C/Users/maxim/Desktop/sunny_world/test.txt",
+		"/C/Users/maxim/Desktop/ludum_dare-master/main.spec",
+		"/C/Users/maxim/Desktop/mat.py",
+		"/C/Users/maxim/Desktop/ludum_dare-master/install_logs.txt",
+		"/C/Users/maxim/Desktop/ludum_dare/perf_logs.txt",
+		"/C/Users/maxim/Desktop/ludum_dare/build/main/warn-main.txt",
+		"/C/Users/maxim/Desktop/ludum_dare-master/game_run_logs.txt",
+		"/C/Users/maxim/Desktop/ludum_dare-master/venv_creation_logs.txt",
+		"/C/OCaml64/home/tp_tri.ml",
+		"/C/Users/maxim/Desktop/nhentai/api_prgm/nhentai/nhentai/utils.py",
+		"/C/Users/maxim/Desktop/nhentai/api_prgm/nhentai/nhentai/serializer.py",
+		"/C/Users/maxim/Desktop/nhentai/api_prgm/nhentai/nhentai/parser.py",
+		"/C/Users/maxim/Desktop/nhentai/api_prgm/nhentai/nhentai/logger.py",
+		"/C/Users/maxim/Desktop/nhentai/api_prgm/nhentai/nhentai/downloader.py",
+		"/C/Users/maxim/Desktop/nhentai/api_prgm/nhentai/nhentai/doujinshi.py",
+		"/C/Users/maxim/Desktop/nhentai/api_prgm/nhentai/nhentai/constant.py",
+		"/C/Users/maxim/Desktop/nhentai/api_prgm/nhentai/nhentai/command.py",
+		"/C/Users/maxim/Desktop/nhentai/api_prgm/nhentai/nhentai/cmdline.py",
+		"/C/Users/maxim/Desktop/sl.txt",
+		"/F/nhentai/dl.py",
+		"/C/Users/maxim/Desktop/proba.py",
+		"/C/Users/maxim/Downloads/haarik.txt",
+		"/C/Users/maxim/Desktop/nhentai/dl.py",
+		"/C/Users/maxim/Desktop/nhentai/api_prgm/test/dl.py",
+		"/C/Users/maxim/Desktop/dl/dl.py",
+		"/C/Users/maxim/Desktop/ext.py",
+		"/C/Users/maxim/Desktop/ex.txt",
+		"/C/OCaml64/home/tp_bis.ml",
+		"/C/Users/maxim/Desktop/tp/tp.py",
+		"/C/Users/maxim/Desktop/pasim.py",
+		"/C/Users/maxim/Documents/home/École/math_sup/Info/ds2/dns_2_chantegrel_maxime.html",
+		"/C/Users/maxim/Desktop/haarik.txt",
+		"/C/OCaml64/home/dns_bis.ml",
+		"/C/Users/maxim/Desktop/deb/main.py",
+		"/C/Users/maxim/Desktop/pfinder.py",
+		"/C/Users/maxim/Desktop/msim.py",
+		"/C/Users/maxim/Desktop/tp.py",
+		"/C/OCaml64/home/ex.ml",
+		"/C/Users/maxim/Desktop/try/generate.py",
+		"/C/Users/maxim/Desktop/oecake_mixer/start.py",
+		"/C/Users/maxim/Desktop/light/src/source.py",
+		"/C/Users/maxim/Desktop/light/main.py",
+		"/C/Users/maxim/Desktop/light/learn.py",
+		"/C/Users/maxim/Documents/home/projects/discord_selfbot/main.py",
+		"/C/OCaml64/home/tp_ocaml.ml",
+		"/C/Users/maxim/Desktop/ex.py",
+		"/C/Program Files (x86)/Lionhead Studios Ltd/The Movies/Data/StarMaker/doc.txt"
+	],
+	"find":
+	{
+		"height": 50.0
+	},
+	"find_in_files":
+	{
+		"height": 143.0,
+		"where_history":
+		[
+			"C:\\Users\\maxim\\Desktop\\cursed_children_reworked\\Assets\\scripts",
+			"C:\\Users\\maxim\\Desktop\\nhentai\\api_prgm\\nhentai\\nhentai",
+			"start.py",
+			"",
+			"blood.lua",
+			"food.lua",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"hitbox",
+			"Die",
+			"Update",
+			"cast_mana_adjust",
+			".bonus",
+			"max_cooldown",
+			"Hide",
+			"HasWeapon",
+			"Position",
+			"weapon_sprite_renderer",
+			"weapon ",
+			"weapon",
+			"hdl",
+			"class Light2D",
+			"Debug.Log",
+			"dist",
+			"tag_parser",
+			"Fetching",
+			"fetching",
+			"1",
+			"world_size.free",
+			"())",
+			"CheckButton",
+			"list",
+			"shutil",
+			"r",
+			"D51",
+			"prisoner_generator",
+			"Name                 Prisoner ",
+			"GameObjectsTypesSize",
+			"next_gameobject_to_be_added",
+			"collide_with",
+			"else if",
+			"Fireball",
+			"integer",
+			"city.demand_evaluation_timer",
+			"game:set_selection",
+			"game:set_hover",
+			"4",
+			"à travers un micro",
+			"le meurtrier",
+			"La",
+			"le meurtrier",
+			"le personnage brun",
+			"Brun",
+			"game_level",
+			"level_name",
+			"level",
+			"room",
+			"Prisoner",
+			"Office",
+			"80",
+			"speach",
+			"lenght",
+			"MAX_SEARCH",
+			"Une mine",
+			"risk_to_die",
+			"Une mine",
+			"class Board",
+			"build_bool_value",
+			"var_decla",
+			"eat_var_declara",
+			"build_function_call",
+			"build_function_ca",
+			"apoapsis",
+			"È",
+			"É",
+			"é",
+			"è",
+			"ï",
+			"ë",
+			"7",
+			".dialogCallback",
+			"Loading",
+			"Prisoner",
+			"Prisonner",
+			"class Map",
+			"class Game",
+			"SOLO_FILE",
+			"stopPlay",
+			"Menu",
+			"blitSpriteOfSquare",
+			"getSurface",
+			"blitSpriteOfSquare",
+			"sample",
+			"pseudoSuffixes",
+			"dit",
+			"256",
+			"Interpreting",
+			"self.commandInterpretor.interpret",
+			"Person",
+			"try",
+			"randint",
+			"cardOf",
+			"loads",
+			"acceptables_values",
+			"default_value",
+			"DICTIONNARY",
+			".index",
+			"RunCommand",
+			"isfile",
+			";\n",
+			"troupe",
+			"troopNum",
+			"n.controler.player=n",
+			"Spectator:",
+			"/",
+			"Exception as e",
+			"pseudo",
+			"widthMatch",
+			"gender",
+			"(e)",
+			"player.say",
+			"Language",
+			"map",
+			"ANI",
+			"adress",
+			"long",
+			"acces",
+			"adrress",
+			"notes",
+			"start",
+			"port",
+			"path",
+			"=+",
+			"manMax",
+			"CreateSav",
+			"game"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Checkbutton",
+			"GameObjectTypesSize",
+			"next_gameobjects_to_be_added",
+			"Blood",
+			"Food",
+			"number",
+			"game:select_city",
+			"game:hover_city",
+			"en off\nen voix off",
+			"en voix off\nen voix off",
+			"le personnage brun",
+			"universe",
+			"planet_name",
+			"level_name",
+			"room_position",
+			"speech",
+			"E",
+			"e",
+			"i",
+			"e",
+			"7"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Assets/scripts/entity_controller_handler.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2786,
+								2786
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3969.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/scripts/entity_handler.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5935,
+								5935
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8987.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/scripts/input_reader.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 913,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								784,
+								784
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 561.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/scripts/weapon_sprite_handler.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1684,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1197,
+								1197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2194.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/scripts/weapon_handler.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1689,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1024,
+								1024
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1186.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/scripts/weapon_placeholder_handler.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2645,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								315,
+								315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3306.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/scripts/flashlight_handler.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1018,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1007,
+								1007
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 174.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Assets/scripts/bar_handler.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1425,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								595,
+								595
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 87.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 43.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 264.0
+	},
+	"output.GoSublime-output":
+	{
+		"height": 246.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 246.0
+	},
+	"output.exec":
+	{
+		"height": 272.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "st_project.sublime-project",
+	"replace":
+	{
+		"height": 98.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

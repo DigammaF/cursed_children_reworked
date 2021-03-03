@@ -20,7 +20,7 @@ public class camera_handler : MonoBehaviour
     	rigid_body = GetComponent<Rigidbody2D>();
     	FocusOn(initial_focus);
         transform.position = initial_focus.transform.position - new Vector3(0, 0, 10);
-        
+
     }
 
     // Update is called once per frame

@@ -24,12 +24,6 @@ public class flashlight_handler : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void TurnOn() {
 
     	is_on = true; 

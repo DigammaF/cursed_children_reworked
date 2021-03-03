@@ -14,6 +14,8 @@ public class bar_handler : MonoBehaviour
 	private Slider slider;
 	private fade_handler bar_fade_handler;
 
+    private float previous_notify = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class bar_handler : MonoBehaviour
     	slider = transform.Find("bar").GetComponent<Slider>();
     	bar_fade_handler = GetComponent<fade_handler>();
 
-    	bar_fade_handler.StartFadeOut(1f);
+    	bar_fade_handler.PopOut();
         
     }
 
@@ -56,6 +58,19 @@ public class bar_handler : MonoBehaviour
     private void FadeOut() {
 
     	bar_fade_handler.StartFadeOut(fade_out_duration);
+
+    }
+
+    public void Notify(float value, float max = 1) {
+
+        float cvalue = value/max;
+
+        if (previous_notify != cvalue) {
+
+            previous_notify = cvalue;
+            Set(cvalue);
+
+        }
 
     }
 

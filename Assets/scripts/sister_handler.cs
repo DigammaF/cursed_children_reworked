@@ -17,9 +17,9 @@ public class sister_handler : MonoBehaviour
 
     }
 
-    void UpdateHealthBar() {
+    public void UpdateHealthBar() {
 
-    	health_bar_handler.ShadowSet(base_entity_handler.health, base_entity_handler.max_health);
+    	health_bar_handler.Set(base_entity_handler.health, base_entity_handler.max_health);
 
     }
 

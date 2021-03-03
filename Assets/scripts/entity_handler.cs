@@ -20,11 +20,13 @@ public class entity_handler : MonoBehaviour
 	public float health = 100f;
 	public float max_health = 100f;
 	public float reload_time = 3f;
-	public float attack_time = 3f;
+	public float attack_cooldown = 3f;
 	public float attack_damage = 20f;
 
 	private float reload = 0f;
 	private float attack = 0f;
+
+	public bool can_hold_weapon = true;
 
 	private bool under_player_command = false;
 	private bool player_can_command = true;
@@ -35,6 +37,19 @@ public class entity_handler : MonoBehaviour
 	public LayerMask vision_block_layer; // this may not work with complex mask manipulation, maybe bitwise ops will be needed
 
 	private flashlight_handler flashlight;
+	private weapon_placeholder_handler weapon_holder;
+
+	public float interaction_distance = 100f;
+
+	private Collider2D[] colliders_tmp;
+	private Collider2D hitbox;
+	private ContactFilter2D no_filter;
+
+    public GameObject attack_cooldown_bar_canvas;
+    private bar_handler attack_cooldown_bar_handler;
+
+    //potential, may be null
+    private sister_handler p_sister_handler;
 
 	public bool UnderPlayerCommand() {
 		return under_player_command;
@@ -42,6 +57,14 @@ public class entity_handler : MonoBehaviour
 
 	public bool PlayerCanCommand() {
 		return player_can_command;
+	}
+
+	public void PreventPlayerCommand() {
+		player_can_command = false;
+	}
+
+	public void AllowPlayerCommand() {
+		player_can_command = true;
 	}
 
 	public void LookForward() {
@@ -74,13 +97,54 @@ public class entity_handler : MonoBehaviour
 
 	}
 
-    // Start is called before the first frame update
+	public void AutoAttackTowardPoint(Vector2 pos) {
+
+		if (CanAttack() && HasWeapon()) {
+
+			weapon_holder.AttackTowardPoint(pos);
+			attack = ComputedCooldown();
+
+		}
+
+	}
+
+	public bool CanAttackPoint(Vector2 pos) 
+	// made to ease AI decision
+	{
+
+		return Vector2.Distance(Position(), pos) <= ComputedRange();
+
+	}
+
+	public bool CanAttackEntity(entity_handler hdl) {
+
+		return CanAttackPoint(hdl.Position());
+
+	}
+
     void Start()
     {
 
     	rigid_body = GetComponent<Rigidbody2D>();
     	animation_handler = GetComponent<entity_animation_handler>();
     	flashlight = transform.Find("flashlight").GetComponent<flashlight_handler>();
+    	weapon_holder = transform.Find("weapon_placeholder").GetComponent<weapon_placeholder_handler>();
+
+    	weapon_holder.LinkOwner(gameObject);
+
+    	colliders_tmp = new Collider2D[6];
+    	hitbox = GetComponent<Collider2D>();
+
+    	ContactFilter2D filter = new ContactFilter2D();
+    	no_filter = filter.NoFilter();
+
+        if (attack_cooldown_bar_canvas) {
+
+            attack_cooldown_bar_handler = attack_cooldown_bar_canvas.GetComponent<bar_handler>();
+
+        }
+
+        p_sister_handler = GetComponent<sister_handler>();
 
     }
 
@@ -137,6 +201,13 @@ public class entity_handler : MonoBehaviour
     	reload = Math.Max(0, reload - Time.deltaTime);
     	attack = Math.Max(0, attack - Time.deltaTime);
 
+        if (attack_cooldown_bar_handler) {
+
+            float max = ComputedCooldown();
+            attack_cooldown_bar_handler.Notify(max - attack, max);
+
+        }
+
     }
 
     bool CanAttack() {
@@ -153,7 +224,19 @@ public class entity_handler : MonoBehaviour
 
     float ComputedDamage() {
 
-    	return attack_damage;
+    	return weapon_holder.AutoWeaponDamage(attack_damage);
+
+    }
+
+    float ComputedCooldown() {
+
+    	return weapon_holder.AutoWeaponCooldown(attack_cooldown);
+
+    }
+
+    float ComputedRange() {
+
+    	return weapon_holder.AutoWeaponRange(interaction_distance);
 
     }
 
@@ -214,6 +297,88 @@ public class entity_handler : MonoBehaviour
     	under_player_command = true;
 
     	flashlight.AutoTurnOn();
+
+    }
+
+    public void OnWeaponHit(GameObject obj) {
+
+    	entity_handler hdl = obj.GetComponent<entity_handler>();
+
+    	if (hdl != null) {
+
+    		OnWeaponHitEntity(hdl);
+
+    	}
+
+    }
+
+    public void OnWeaponHitEntity(entity_handler hdl) {
+
+    	hdl.TakeDamage(ComputedDamage());
+
+    }
+
+    public bool CanGrabWeapon(GameObject weapon) {
+
+    	weapon_handler weapon_hdl = weapon.GetComponent<weapon_handler>();
+    	return Vector2.Distance(weapon_hdl.Position(), Position()) < interaction_distance;
+
+    }
+
+    public void GrabWeapon(GameObject weapon) {
+
+    	weapon_holder.PickupWeapon(weapon);
+
+    }
+
+    public void AutoGrabWeapon(GameObject weapon) {
+
+    	if (can_hold_weapon && !(weapon.GetComponent<weapon_handler>().Owned()) && CanGrabWeapon(weapon)) {
+
+    		GrabWeapon(weapon);
+
+    	}
+
+    }
+
+    public void DropWeapon() {
+
+    	weapon_holder.DropWeapon();
+
+    }
+
+    public bool HasWeapon() {
+
+    	return weapon_holder.HasWeapon();
+
+    }
+
+    public void TakeNearWeapon() {
+
+    	int amount = hitbox.OverlapCollider(no_filter, colliders_tmp);
+
+    	for (int i = 0; i < amount; i++) {
+
+    		GameObject gameobject = colliders_tmp[i].gameObject;
+    		weapon_handler weapon_hdl = gameobject.GetComponent<weapon_handler>();
+
+    		if (weapon_hdl != null) {
+
+    			AutoGrabWeapon(gameobject);
+
+    		}
+
+    	}
+
+    }
+
+    public void TakeDamage(float damage) {
+
+        health -= damage;
+
+        if (p_sister_handler != null) {
+            p_sister_handler.UpdateHealthBar();
+        }
 
     }
 

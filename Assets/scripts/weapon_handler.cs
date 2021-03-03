@@ -5,9 +5,7 @@ using UnityEngine;
 public class weapon_handler : MonoBehaviour
 {
 
-	public int animation_type = 0;
-	// 0 sword
-	// 1 spear
+	public string animation_type = "weapon_attack_sword";
 
 	public float damage_addition = 0;
 	public float damage_multiplier = 1;
@@ -59,11 +57,7 @@ public class weapon_handler : MonoBehaviour
 
     	StartAttacking();
 
-    	if (animation_type == 0) {
-
-    		animator.Play("weapon_attack_sword");
-
-    	}
+        animator.Play(animation_type);
 
     	Invoke("StopAttacking", 0.5f);
     	Invoke("StopAnimation", 0.5f);

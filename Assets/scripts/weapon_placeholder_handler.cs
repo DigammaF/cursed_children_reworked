@@ -44,7 +44,7 @@ public class weapon_placeholder_handler : MonoBehaviour
     	// pick
 
     	weapon.transform.parent = gameObject.transform;
-    	weapon.transform.position.Set(0f, 0f, 0f);
+        weapon.transform.localPosition = new Vector3(0f, 0f, 0f);
 
     	// end pick
 

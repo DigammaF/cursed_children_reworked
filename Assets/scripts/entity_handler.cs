@@ -48,6 +48,9 @@ public class entity_handler : MonoBehaviour
     public GameObject attack_cooldown_bar_canvas;
     private bar_handler attack_cooldown_bar_handler;
 
+    //potential, may be null
+    private sister_handler p_sister_handler;
+
 	public bool UnderPlayerCommand() {
 		return under_player_command;
 	}
@@ -140,6 +143,8 @@ public class entity_handler : MonoBehaviour
             attack_cooldown_bar_handler = attack_cooldown_bar_canvas.GetComponent<bar_handler>();
 
         }
+
+        p_sister_handler = GetComponent<sister_handler>();
 
     }
 
@@ -309,14 +314,14 @@ public class entity_handler : MonoBehaviour
 
     public void OnWeaponHitEntity(entity_handler hdl) {
 
-    	Debug.Log("Entity hit !");
+    	hdl.TakeDamage(ComputedDamage());
 
     }
 
     public bool CanGrabWeapon(GameObject weapon) {
 
     	weapon_handler weapon_hdl = weapon.GetComponent<weapon_handler>();
-    	return (!HasWeapon()) && Vector2.Distance(weapon_hdl.Position(), Position()) < interaction_distance;
+    	return Vector2.Distance(weapon_hdl.Position(), Position()) < interaction_distance;
 
     }
 
@@ -359,12 +364,21 @@ public class entity_handler : MonoBehaviour
 
     		if (weapon_hdl != null) {
 
-    			GrabWeapon(gameobject);
-    			break;
+    			AutoGrabWeapon(gameobject);
 
     		}
 
     	}
+
+    }
+
+    public void TakeDamage(float damage) {
+
+        health -= damage;
+
+        if (p_sister_handler != null) {
+            p_sister_handler.UpdateHealthBar();
+        }
 
     }
 

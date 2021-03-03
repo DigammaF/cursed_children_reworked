@@ -2797,6 +2797,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2009446334470278164, guid: 8aec1ab6dff4acb458199f21ef2bd164,
+        type: 3}
+      propertyPath: animation_type
+      value: weapon_attack_sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009446334470278164, guid: 8aec1ab6dff4acb458199f21ef2bd164,
+        type: 3}
+      propertyPath: debug_identification
+      value: LAY
+      objectReference: {fileID: 0}
     - target: {fileID: 2009446334470278185, guid: 8aec1ab6dff4acb458199f21ef2bd164,
         type: 3}
       propertyPath: m_Name
@@ -2856,6 +2866,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009446334653648431, guid: 8aec1ab6dff4acb458199f21ef2bd164,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8aec1ab6dff4acb458199f21ef2bd164, type: 3}
@@ -3165,6 +3180,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1885581599}
     m_Modifications:
+    - target: {fileID: 2009446334470278164, guid: 8aec1ab6dff4acb458199f21ef2bd164,
+        type: 3}
+      propertyPath: animation_type
+      value: weapon_attack_sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009446334470278164, guid: 8aec1ab6dff4acb458199f21ef2bd164,
+        type: 3}
+      propertyPath: debug_identification
+      value: START
+      objectReference: {fileID: 0}
     - target: {fileID: 2009446334470278185, guid: 8aec1ab6dff4acb458199f21ef2bd164,
         type: 3}
       propertyPath: m_Name
@@ -3224,6 +3249,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2009446334653648431, guid: 8aec1ab6dff4acb458199f21ef2bd164,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8aec1ab6dff4acb458199f21ef2bd164, type: 3}

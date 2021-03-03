@@ -76,15 +76,11 @@ public class weapon_sprite_handler : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collision collision) {
-
-        Debug.Log("Collision!");
+    void OnTriggerEnter2D(Collider2D collision) {
 
     	if (attacking && Owned()) {
 
     		if (!(Object.ReferenceEquals(collision.gameObject, owner))) {
-
-                Debug.Log(collision.gameObject);
 
     			owner_hdl.OnWeaponHit(collision.gameObject);
 
